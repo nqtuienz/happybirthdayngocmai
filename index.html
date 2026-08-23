@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5d8e2" />
+  <title>Happy 21th Birthday, Mai ♡</title>
+
+  <!-- Optional web fonts; the CSS also has safe fallbacks if offline. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=Great+Vibes&family=Nunito:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div id="app" class="app">
+    <!-- Decorative floating elements -->
+    <div class="floating-decor" aria-hidden="true">
+      <span class="float-star f1">✦</span>
+      <span class="float-star f2">✧</span>
+      <span class="float-star f3">★</span>
+      <span class="float-star f4">✦</span>
+      <span class="float-star f5">♡</span>
+      <span class="float-star f6">✿</span>
+      <span class="float-star f7">✧</span>
+      <span class="float-star f8">♡</span>
+      <span class="float-star f9">✦</span>
+      <span class="float-star f10">✿</span>
+    </div>
+
+    <!-- =========================
+         SCREEN 1
+    ========================== -->
+    <section id="screen1" class="screen screen-cover active" aria-labelledby="coverTitle">
+      <div class="cover-ribbon ribbon-a"></div>
+      <div class="cover-ribbon ribbon-b"></div>
+
+      <div class="cover-card">
+        <div class="bow" aria-hidden="true">🎀</div>
+
+        <h1 id="coverTitle" class="cover-title">
+          <span class="cover-line-small">Happy</span>
+          <span class="cover-age">21<sup>th</sup></span>
+          <span class="cover-line-big">Birthday!</span>
+        </h1>
+
+        <div class="mini-sparkle" aria-hidden="true">⌁⌁</div>
+
+        <div class="cover-art-row">
+          <figure class="art-card art-card-left">
+            <img src="./assets/cover1.jpg" alt="Ảnh kỷ niệm 1" />
+          </figure>
+
+          <figure class="art-card art-card-right">
+            <img src="./assets/cover2.jpg" alt="Ảnh kỷ niệm 2" />
+          </figure>
+        </div>
+
+        <div class="cover-icons" aria-hidden="true">
+          <span>✦</span><span>♡</span><span>✧</span><span>✿</span>
+          <span>✦</span><span>♡</span><span>✧</span><span>✿</span>
+          <span>·</span><span>·</span>
+        </div>
+
+        <p class="cover-message">
+          một tấm thiệp nhỏ dành cho một người đặc biệt<br />
+          vào ngày đặc biệt ♡
+        </p>
+
+        <div class="cover-actions">
+          <span class="year-pill">♡ 2026 ♡</span>
+          <button id="nextButton1" class="next-btn" type="button">
+            <span>→</span> next :3 ✿
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         SCREEN 2
+    ========================== -->
+    <section id="screen2" class="screen" aria-labelledby="memoryTitle">
+      <div class="screen-inner">
+        <div class="chapter-mark">chapter 01</div>
+
+        <h2 id="memoryTitle" class="script-heading">A little memory ♡</h2>
+
+        <div class="polaroid">
+          <div class="polaroid-tape"></div>
+          <div class="polaroid-photo">
+            <img id="memoryPhoto" src="./assets/memory.jpg" alt="Ảnh kỷ niệm của Mai" />
+          </div>
+          <p class="polaroid-caption">một khoảnh khắc rất đỗi dịu dàng</p>
+          <span class="polaroid-date">15.09</span>
+        </div>
+
+        <p class="screen-message">
+          Có một món quà đang chờ Mai ở bước tiếp theo...
+        </p>
+
+        <button id="nextButton2" class="next-btn light" type="button">
+          → next :3
+        </button>
+      </div>
+    </section>
+
+    <!-- =========================
+         SCREEN 3
+    ========================== -->
+    <section id="screen3" class="screen screen-gift" aria-labelledby="giftTitle">
+      <div class="screen-inner">
+        <div class="chapter-mark">chapter 02</div>
+
+        <h2 id="giftTitle" class="script-heading">A tiny surprise ♡</h2>
+
+        <div class="instruction-card">
+          <p>tap on the cake to open your gift!</p>
+
+          <button id="cakeButton" class="cake-button" type="button" aria-label="Mở bánh sinh nhật">
+            <span class="cake-glow" aria-hidden="true"></span>
+            <img src="./assets/cake.jpg" alt="Bánh sinh nhật" />
+          </button>
+
+          <p class="tiny-hint">chạm nhẹ vào chiếc bánh ✨</p>
+        </div>
+
+        <div id="giftReveal" class="gift-reveal" aria-live="polite">
+          <div class="gift-box" aria-hidden="true">🎁</div>
+          <p class="gift-message">
+            Hôm nay là 15/09, chúc Mai sinh nhật vui vẻ! 💗
+          </p>
+          <button id="nextButton3" class="next-btn light hidden" type="button">
+            mở tiếp ♡
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         SCREEN 4
+    ========================== -->
+    <section id="screen4" class="screen screen-letter" aria-labelledby="letterTitle">
+      <div class="screen-inner">
+        <div class="letter-card">
+          <div class="letter-corner letter-corner-tl">✿</div>
+          <div class="letter-corner letter-corner-tr">♡</div>
+          <div class="letter-corner letter-corner-bl">✧</div>
+          <div class="letter-corner letter-corner-br">✿</div>
+
+          <div class="letter-flower" aria-hidden="true">🌷</div>
+          <h2 id="letterTitle" class="script-heading">Happy Birthday!</h2>
+
+          <p class="letter-text">
+            Chúc Mai sinh nhật vui vẻ!! Tuổi mới rạng rỡ như hoa hướng dương
+            hướng về ánh dương rực rỡ, khỏe mạnh và vững vàng như cây trúc hứng
+            trọn bão giông nhưng vẫn hiên ngang, lung linh như nắng từ trời cao
+            ban xuống, muộn phiền lo toan luôn ở sau nhường đường cho thành công
+            dẫn lối. Chúc Mai tìm được người tâm đầu ý hợp, luôn hiểu và lo lắng
+            cho Mai. Tìm được công việc ưng ý và thu nhập ổn định :3
+          </p>
+
+          <p class="letter-signature">— từ một người siêu đáng yêu ♡</p>
+        </div>
+
+        <button id="nextButton4" class="next-btn light" type="button">
+          → next :3
+        </button>
+      </div>
+    </section>
+
+    <!-- =========================
+         SCREEN 5
+    ========================== -->
+    <section id="screen5" class="screen screen-final" aria-labelledby="finalTitle">
+      <div class="screen-inner final-inner">
+        <div class="final-art" aria-hidden="true">
+          <span>🌷</span><span>🎂</span><span>🌷</span>
+        </div>
+
+        <h2 id="finalTitle" class="script-heading">It's your day! ♡</h2>
+
+        <p class="final-text">Cảm ơn vì đã mở tấm thiệp này.</p>
+
+        <div class="final-buttons">
+          <button id="shareButton" class="next-btn" type="button">
+            share ♡
+          </button>
+
+          <button id="restartButton" class="ghost-btn" type="button">
+            xem lại từ đầu
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div id="confettiLayer" class="confetti-layer" aria-hidden="true"></div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
